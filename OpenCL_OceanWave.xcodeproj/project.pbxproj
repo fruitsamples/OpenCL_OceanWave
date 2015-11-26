@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63C20CC110DC1F910032417F /* ocean.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C20CBD10DC1F910032417F /* ocean.frag */; };
+		63C20CC210DC1F910032417F /* ocean.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C20CBE10DC1F910032417F /* ocean.vert */; };
+		63C20CC310DC1F910032417F /* sky.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C20CBF10DC1F910032417F /* sky.frag */; };
+		63C20CC410DC1F910032417F /* sky.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C20CC010DC1F910032417F /* sky.vert */; };
+		63C20CC610DC1F960032417F /* compute_kernels.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C20CC510DC1F960032417F /* compute_kernels.cl */; };
+		BEB1D18D10CDDEB400E030DC /* buffer_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D15410CDDEB400E030DC /* buffer_object.cpp */; };
+		BEB1D18E10CDDEB400E030DC /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D15610CDDEB400E030DC /* camera.cpp */; };
+		BEB1D18F10CDDEB400E030DC /* compute_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D15810CDDEB400E030DC /* compute_engine.cpp */; };
+		BEB1D19010CDDEB400E030DC /* compute_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D15A10CDDEB400E030DC /* compute_math.cpp */; };
+		BEB1D19110CDDEB400E030DC /* csm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D15D10CDDEB400E030DC /* csm.cpp */; };
+		BEB1D19210CDDEB400E030DC /* data_loader.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16010CDDEB400E030DC /* data_loader.m */; };
+		BEB1D19310CDDEB400E030DC /* fbo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16110CDDEB400E030DC /* fbo.cpp */; };
+		BEB1D19410CDDEB400E030DC /* frustum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16310CDDEB400E030DC /* frustum.cpp */; };
+		BEB1D19510CDDEB400E030DC /* grid_mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16510CDDEB400E030DC /* grid_mesh.cpp */; };
+		BEB1D19710CDDEB400E030DC /* memory_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16810CDDEB400E030DC /* memory_buffer.cpp */; };
+		BEB1D19810CDDEB400E030DC /* mesh_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16A10CDDEB400E030DC /* mesh_model.cpp */; };
+		BEB1D19910CDDEB400E030DC /* mesh_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16C10CDDEB400E030DC /* mesh_renderer.cpp */; };
+		BEB1D19A10CDDEB400E030DC /* plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D16E10CDDEB400E030DC /* plane.cpp */; };
+		BEB1D19B10CDDEB400E030DC /* projected_grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17010CDDEB400E030DC /* projected_grid.cpp */; };
+		BEB1D19C10CDDEB400E030DC /* projector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17210CDDEB400E030DC /* projector.cpp */; };
+		BEB1D19D10CDDEB400E030DC /* pssm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17410CDDEB400E030DC /* pssm.cpp */; };
+		BEB1D19E10CDDEB400E030DC /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17610CDDEB400E030DC /* shader.cpp */; };
+		BEB1D19F10CDDEB400E030DC /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17810CDDEB400E030DC /* texture.cpp */; };
+		BEB1D1A110CDDEB400E030DC /* fft_execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D17F10CDDEB400E030DC /* fft_execute.cpp */; };
+		BEB1D1A210CDDEB400E030DC /* fft_kernelstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D18110CDDEB400E030DC /* fft_kernelstring.cpp */; };
+		BEB1D1A310CDDEB400E030DC /* fft_setup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D18210CDDEB400E030DC /* fft_setup.cpp */; };
+		BEB1D1A510CDDEB400E030DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D18410CDDEB400E030DC /* main.cpp */; };
+		BEB1D1A610CDDEB400E030DC /* ocean_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D18510CDDEB400E030DC /* ocean_renderer.cpp */; };
+		BEB1D1A710CDDEB400E030DC /* ocean_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEB1D18710CDDEB400E030DC /* ocean_simulator.cpp */; };
+		BEB1D1CF10CDE07C00E030DC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1D1CE10CDE07C00E030DC /* GLUT.framework */; };
+		BEB1D1D110CDE07C00E030DC /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1D1D010CDE07C00E030DC /* OpenCL.framework */; };
+		BEB1D1D310CDE07C00E030DC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1D1D210CDE07C00E030DC /* OpenGL.framework */; };
+		BEB1D1E110CDE09300E030DC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1D1E010CDE09300E030DC /* Accelerate.framework */; };
+		BEB1D1EC10CDE0C500E030DC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB1D1EB10CDE0C500E030DC /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEC2E75C10CDFA8B00B45670 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				63C20CC110DC1F910032417F /* ocean.frag in CopyFiles */,
+				63C20CC210DC1F910032417F /* ocean.vert in CopyFiles */,
+				63C20CC310DC1F910032417F /* sky.frag in CopyFiles */,
+				63C20CC410DC1F910032417F /* sky.vert in CopyFiles */,
+				63C20CC610DC1F960032417F /* compute_kernels.cl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63C20CBD10DC1F910032417F /* ocean.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ocean.frag; sourceTree = "<group>"; };
+		63C20CBE10DC1F910032417F /* ocean.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ocean.vert; sourceTree = "<group>"; };
+		63C20CBF10DC1F910032417F /* sky.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sky.frag; sourceTree = "<group>"; };
+		63C20CC010DC1F910032417F /* sky.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sky.vert; sourceTree = "<group>"; };
+		63C20CC510DC1F960032417F /* compute_kernels.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = compute_kernels.cl; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* OpenCL_OceanWave */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCL_OceanWave; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB1D15310CDDEB400E030DC /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
+		BEB1D15410CDDEB400E030DC /* buffer_object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer_object.cpp; sourceTree = "<group>"; };
+		BEB1D15510CDDEB400E030DC /* buffer_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer_object.h; sourceTree = "<group>"; };
+		BEB1D15610CDDEB400E030DC /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		BEB1D15710CDDEB400E030DC /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		BEB1D15810CDDEB400E030DC /* compute_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compute_engine.cpp; sourceTree = "<group>"; };
+		BEB1D15910CDDEB400E030DC /* compute_engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compute_engine.h; sourceTree = "<group>"; };
+		BEB1D15A10CDDEB400E030DC /* compute_math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compute_math.cpp; sourceTree = "<group>"; };
+		BEB1D15B10CDDEB400E030DC /* compute_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compute_math.h; sourceTree = "<group>"; };
+		BEB1D15C10CDDEB400E030DC /* compute_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compute_types.h; sourceTree = "<group>"; };
+		BEB1D15D10CDDEB400E030DC /* csm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csm.cpp; sourceTree = "<group>"; };
+		BEB1D15E10CDDEB400E030DC /* csm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csm.h; sourceTree = "<group>"; };
+		BEB1D15F10CDDEB400E030DC /* data_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_loader.h; sourceTree = "<group>"; };
+		BEB1D16010CDDEB400E030DC /* data_loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = data_loader.m; sourceTree = "<group>"; };
+		BEB1D16110CDDEB400E030DC /* fbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fbo.cpp; sourceTree = "<group>"; };
+		BEB1D16210CDDEB400E030DC /* fbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fbo.h; sourceTree = "<group>"; };
+		BEB1D16310CDDEB400E030DC /* frustum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frustum.cpp; sourceTree = "<group>"; };
+		BEB1D16410CDDEB400E030DC /* frustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frustum.h; sourceTree = "<group>"; };
+		BEB1D16510CDDEB400E030DC /* grid_mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grid_mesh.cpp; sourceTree = "<group>"; };
+		BEB1D16610CDDEB400E030DC /* grid_mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grid_mesh.h; sourceTree = "<group>"; };
+		BEB1D16810CDDEB400E030DC /* memory_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memory_buffer.cpp; sourceTree = "<group>"; };
+		BEB1D16910CDDEB400E030DC /* memory_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_buffer.h; sourceTree = "<group>"; };
+		BEB1D16A10CDDEB400E030DC /* mesh_model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mesh_model.cpp; sourceTree = "<group>"; };
+		BEB1D16B10CDDEB400E030DC /* mesh_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh_model.h; sourceTree = "<group>"; };
+		BEB1D16C10CDDEB400E030DC /* mesh_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mesh_renderer.cpp; sourceTree = "<group>"; };
+		BEB1D16D10CDDEB400E030DC /* mesh_renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh_renderer.h; sourceTree = "<group>"; };
+		BEB1D16E10CDDEB400E030DC /* plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plane.cpp; sourceTree = "<group>"; };
+		BEB1D16F10CDDEB400E030DC /* plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plane.h; sourceTree = "<group>"; };
+		BEB1D17010CDDEB400E030DC /* projected_grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = projected_grid.cpp; sourceTree = "<group>"; };
+		BEB1D17110CDDEB400E030DC /* projected_grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projected_grid.h; sourceTree = "<group>"; };
+		BEB1D17210CDDEB400E030DC /* projector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = projector.cpp; sourceTree = "<group>"; };
+		BEB1D17310CDDEB400E030DC /* projector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projector.h; sourceTree = "<group>"; };
+		BEB1D17410CDDEB400E030DC /* pssm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pssm.cpp; sourceTree = "<group>"; };
+		BEB1D17510CDDEB400E030DC /* pssm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pssm.h; sourceTree = "<group>"; };
+		BEB1D17610CDDEB400E030DC /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		BEB1D17710CDDEB400E030DC /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		BEB1D17810CDDEB400E030DC /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		BEB1D17910CDDEB400E030DC /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		BEB1D17A10CDDEB400E030DC /* timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		BEB1D17D10CDDEB400E030DC /* clFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clFFT.h; sourceTree = "<group>"; };
+		BEB1D17E10CDDEB400E030DC /* fft_base_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_base_kernels.h; sourceTree = "<group>"; };
+		BEB1D17F10CDDEB400E030DC /* fft_execute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_execute.cpp; sourceTree = "<group>"; };
+		BEB1D18010CDDEB400E030DC /* fft_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_internal.h; sourceTree = "<group>"; };
+		BEB1D18110CDDEB400E030DC /* fft_kernelstring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_kernelstring.cpp; sourceTree = "<group>"; };
+		BEB1D18210CDDEB400E030DC /* fft_setup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_setup.cpp; sourceTree = "<group>"; };
+		BEB1D18410CDDEB400E030DC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BEB1D18510CDDEB400E030DC /* ocean_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocean_renderer.cpp; sourceTree = "<group>"; };
+		BEB1D18610CDDEB400E030DC /* ocean_renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocean_renderer.h; sourceTree = "<group>"; };
+		BEB1D18710CDDEB400E030DC /* ocean_simulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocean_simulator.cpp; sourceTree = "<group>"; };
+		BEB1D18810CDDEB400E030DC /* ocean_simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocean_simulator.h; sourceTree = "<group>"; };
+		BEB1D1CE10CDE07C00E030DC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		BEB1D1D010CDE07C00E030DC /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
+		BEB1D1D210CDE07C00E030DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		BEB1D1E010CDE09300E030DC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		BEB1D1EB10CDE0C500E030DC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB1D1CF10CDE07C00E030DC /* GLUT.framework in Frameworks */,
+				BEB1D1D110CDE07C00E030DC /* OpenCL.framework in Frameworks */,
+				BEB1D1D310CDE07C00E030DC /* OpenGL.framework in Frameworks */,
+				BEB1D1E110CDE09300E030DC /* Accelerate.framework in Frameworks */,
+				BEB1D1EC10CDE0C500E030DC /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* OpenCL_OceanWave */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				BEB1D1CE10CDE07C00E030DC /* GLUT.framework */,
+				BEB1D1D010CDE07C00E030DC /* OpenCL.framework */,
+				BEB1D1D210CDE07C00E030DC /* OpenGL.framework */,
+				BEB1D1E010CDE09300E030DC /* Accelerate.framework */,
+				BEB1D1EB10CDE0C500E030DC /* AppKit.framework */,
+			);
+			name = OpenCL_OceanWave;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D15210CDDEB400E030DC /* common */,
+				BEB1D17C10CDDEB400E030DC /* fft */,
+				BEB1D18410CDDEB400E030DC /* main.cpp */,
+				BEB1D18510CDDEB400E030DC /* ocean_renderer.cpp */,
+				BEB1D18610CDDEB400E030DC /* ocean_renderer.h */,
+				BEB1D18710CDDEB400E030DC /* ocean_simulator.cpp */,
+				BEB1D18810CDDEB400E030DC /* ocean_simulator.h */,
+				63C20CB810DC1F7E0032417F /* kernels */,
+				63C20CB510DC1F700032417F /* shaders */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* OpenCL_OceanWave */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C20CB510DC1F700032417F /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				63C20CBD10DC1F910032417F /* ocean.frag */,
+				63C20CBE10DC1F910032417F /* ocean.vert */,
+				63C20CBF10DC1F910032417F /* sky.frag */,
+				63C20CC010DC1F910032417F /* sky.vert */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		63C20CB810DC1F7E0032417F /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				63C20CC510DC1F960032417F /* compute_kernels.cl */,
+			);
+			name = kernels;
+			sourceTree = "<group>";
+		};
+		BEB1D15210CDDEB400E030DC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D15310CDDEB400E030DC /* aabb.h */,
+				BEB1D15410CDDEB400E030DC /* buffer_object.cpp */,
+				BEB1D15510CDDEB400E030DC /* buffer_object.h */,
+				BEB1D15610CDDEB400E030DC /* camera.cpp */,
+				BEB1D15710CDDEB400E030DC /* camera.h */,
+				BEB1D15810CDDEB400E030DC /* compute_engine.cpp */,
+				BEB1D15910CDDEB400E030DC /* compute_engine.h */,
+				BEB1D15A10CDDEB400E030DC /* compute_math.cpp */,
+				BEB1D15B10CDDEB400E030DC /* compute_math.h */,
+				BEB1D15C10CDDEB400E030DC /* compute_types.h */,
+				BEB1D15D10CDDEB400E030DC /* csm.cpp */,
+				BEB1D15E10CDDEB400E030DC /* csm.h */,
+				BEB1D15F10CDDEB400E030DC /* data_loader.h */,
+				BEB1D16010CDDEB400E030DC /* data_loader.m */,
+				BEB1D16110CDDEB400E030DC /* fbo.cpp */,
+				BEB1D16210CDDEB400E030DC /* fbo.h */,
+				BEB1D16310CDDEB400E030DC /* frustum.cpp */,
+				BEB1D16410CDDEB400E030DC /* frustum.h */,
+				BEB1D16510CDDEB400E030DC /* grid_mesh.cpp */,
+				BEB1D16610CDDEB400E030DC /* grid_mesh.h */,
+				BEB1D16810CDDEB400E030DC /* memory_buffer.cpp */,
+				BEB1D16910CDDEB400E030DC /* memory_buffer.h */,
+				BEB1D16A10CDDEB400E030DC /* mesh_model.cpp */,
+				BEB1D17010CDDEB400E030DC /* projected_grid.cpp */,
+				BEB1D16B10CDDEB400E030DC /* mesh_model.h */,
+				BEB1D16C10CDDEB400E030DC /* mesh_renderer.cpp */,
+				BEB1D16D10CDDEB400E030DC /* mesh_renderer.h */,
+				BEB1D16E10CDDEB400E030DC /* plane.cpp */,
+				BEB1D16F10CDDEB400E030DC /* plane.h */,
+				BEB1D17110CDDEB400E030DC /* projected_grid.h */,
+				BEB1D17210CDDEB400E030DC /* projector.cpp */,
+				BEB1D17310CDDEB400E030DC /* projector.h */,
+				BEB1D17410CDDEB400E030DC /* pssm.cpp */,
+				BEB1D17510CDDEB400E030DC /* pssm.h */,
+				BEB1D17610CDDEB400E030DC /* shader.cpp */,
+				BEB1D17710CDDEB400E030DC /* shader.h */,
+				BEB1D17810CDDEB400E030DC /* texture.cpp */,
+				BEB1D17910CDDEB400E030DC /* texture.h */,
+				BEB1D17A10CDDEB400E030DC /* timing.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BEB1D17C10CDDEB400E030DC /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				BEB1D17D10CDDEB400E030DC /* clFFT.h */,
+				BEB1D17E10CDDEB400E030DC /* fft_base_kernels.h */,
+				BEB1D17F10CDDEB400E030DC /* fft_execute.cpp */,
+				BEB1D18010CDDEB400E030DC /* fft_internal.h */,
+				BEB1D18110CDDEB400E030DC /* fft_kernelstring.cpp */,
+				BEB1D18210CDDEB400E030DC /* fft_setup.cpp */,
+			);
+			path = fft;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* OpenCL_OceanWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "OpenCL_OceanWave" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				BEC2E75C10CDFA8B00B45670 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCL_OceanWave;
+			productInstallPath = "$(HOME)/bin";
+			productName = OpenCL_OceanWave;
+			productReference = 8DD76F6C0486A84900D96B5E /* OpenCL_OceanWave */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "OpenCL_OceanWave" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* OpenCL_OceanWave */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* OpenCL_OceanWave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB1D18D10CDDEB400E030DC /* buffer_object.cpp in Sources */,
+				BEB1D18E10CDDEB400E030DC /* camera.cpp in Sources */,
+				BEB1D18F10CDDEB400E030DC /* compute_engine.cpp in Sources */,
+				BEB1D19010CDDEB400E030DC /* compute_math.cpp in Sources */,
+				BEB1D19110CDDEB400E030DC /* csm.cpp in Sources */,
+				BEB1D19210CDDEB400E030DC /* data_loader.m in Sources */,
+				BEB1D19310CDDEB400E030DC /* fbo.cpp in Sources */,
+				BEB1D19410CDDEB400E030DC /* frustum.cpp in Sources */,
+				BEB1D19510CDDEB400E030DC /* grid_mesh.cpp in Sources */,
+				BEB1D19710CDDEB400E030DC /* memory_buffer.cpp in Sources */,
+				BEB1D19810CDDEB400E030DC /* mesh_model.cpp in Sources */,
+				BEB1D19910CDDEB400E030DC /* mesh_renderer.cpp in Sources */,
+				BEB1D19A10CDDEB400E030DC /* plane.cpp in Sources */,
+				BEB1D19B10CDDEB400E030DC /* projected_grid.cpp in Sources */,
+				BEB1D19C10CDDEB400E030DC /* projector.cpp in Sources */,
+				BEB1D19D10CDDEB400E030DC /* pssm.cpp in Sources */,
+				BEB1D19E10CDDEB400E030DC /* shader.cpp in Sources */,
+				BEB1D19F10CDDEB400E030DC /* texture.cpp in Sources */,
+				BEB1D1A110CDDEB400E030DC /* fft_execute.cpp in Sources */,
+				BEB1D1A210CDDEB400E030DC /* fft_kernelstring.cpp in Sources */,
+				BEB1D1A310CDDEB400E030DC /* fft_setup.cpp in Sources */,
+				BEB1D1A510CDDEB400E030DC /* main.cpp in Sources */,
+				BEB1D1A610CDDEB400E030DC /* ocean_renderer.cpp in Sources */,
+				BEB1D1A710CDDEB400E030DC /* ocean_simulator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = OpenCL_OceanWave;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = OpenCL_OceanWave;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "OpenCL_OceanWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "OpenCL_OceanWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
